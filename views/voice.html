@@ -1,0 +1,25 @@
+<div class="content" ng-repeat='data in dataArr'>
+	<div class="cot-top">
+		<div class="u-img">
+			<img ng-src="{{data.profile_image}}"/>
+		</div>
+		<div class="u-txt">
+			<a href="#">{{data.name}}</a>
+		</div>
+		<span class="u-time">{{data.ct}}</span>
+	</div>
+	<p class="videoTxt">{{data.text}}</p>
+	<div class="u-content">
+		<div class="u-video">
+			<img ng-src="{{data.cdn_img}}"/>
+			<audio ng-src="{{videoUrl(data.voice_uri)}}"></audio>
+			<i id="audioBtn" ng-click="videoPlay($event)"></i>
+		</div>
+	</div>
+	<div class="cot-tool">
+		<i class="u-love">{{data.love}}</i>
+		<em class="u-hate">{{data.hate}}</em>
+		<i class="u-share">{{fxNum}}</i>
+		<div class="u-down"></div>
+	</div>
+</div>

@@ -1,0 +1,80 @@
+
+<div ng-app="loReApp">
+	<div ng-controller="logReg">
+		<div id="log-wrapper" class="log-wrap">
+			<div class="log-login-box" id="login-box">
+				<div class="log-box-1">
+					<div class="log-login-dialog-header">
+						<div class="log-login-title">登录</div>
+						<span class="log-login-close" ng-click="logRegClose()"></span>
+					</div>
+					<div class="log-login-dialog-content">
+						<div class="log-login-dialog-left">
+							<form  method="post" name="logUsername">
+								<div class="log-login-con-one log-login-con-spe">
+									<div class="log-login-con-phone log-login-con-input">
+										<span class="log-login-con-p-tit"> 用户名 | </span>
+										<input type="text" placeholder="请输入用户名" class="log-login-con-p-con log-login-con-username" name="username" value="" id="txtUserRegistUsername"
+											required ng-pattern="/^[a-zA-Z0-9_]{3,16}$/" ng-model="regRegister.un" ng-blur="regRegisterName.change(logUsername.username.$error)" />
+										<span class="red" ng-repeat="FM in regRegisterName.regRegisterList | filter:regRegisterName.regRegisterVal">{{FM.tips}}</span>
+										<span class="loginUsername"></span>
+									</div>
+								</div>
+								<div class="log-login-con-one log-login-con-psw">
+									<div class="log-login-con-phone log-login-con-input">
+										<span class="log-login-con-p-tit">密&nbsp;&nbsp;&nbsp;&nbsp;码 | </span>
+										<input type="text" placeholder="请输入密码" class="log-login-con-p-con log-login-con-password" name="userpassword" id="txtUserRegistPassword"
+											required ng-pattern="/^[a-zA-Z\d_]{6,16}$/" ng-model="regRegister.psw" ng-blur="regRegisterpsw.change(logUsername.userpassword.$error)" />
+										<span class="red" ng-repeat="FM in regRegisterpsw.regRegisterList | filter:regRegisterpsw.regRegisterVal">{{FM.tips}}</span>
+											
+									</div>
+								</div>
+								<div class="log-login-argument">
+									<lable class="log-remind-me">
+										<span class="log-icon-checkbox log-icon-checkbox-click">
+										
+										</span>
+										&nbsp;&nbsp;姐，记住我
+									</lable>
+									<a id="log-btn-register" class="log-submit" ng-click="loginToIndex()">登陆 </a>
+								</div>
+							</form>
+						</div>
+						<div class="log-login-dialog-right">
+							<div class="log-joint-login">
+								<span class="log-login-icon-joint-login">合作账号登录</span>
+								<ul>
+									<li>
+										<a href="http://d.api.budejie.com/user/weibo_login">
+										<span class="log-joint-login-xinlang">
+											
+										</span>
+										<span class="log-joint-login-txt">
+											新浪微博
+										</span>
+										</a>
+									</li>
+									<li>
+										<a href="http://d.api.budejie.com/user/qq_login">
+										<span class="log-joint-login-qq">
+											
+										</span>
+										<span class="log-joint-login-txt">
+											QQ
+										</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="log-login-con-login">
+								<span class="log-login-con-right-login">还没有账号？</span>
+								<span class="log-login-con-icon-login"><a href="registion.html">注册</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

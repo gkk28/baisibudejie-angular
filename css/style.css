@@ -1,0 +1,507 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  font-size: 12px;
+}
+.red {
+  color: red;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 10000;
+}
+#reg-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: none;
+}
+.reg-wrap {
+  overflow: hidden;
+  user-select: none;
+  z-index: 1000;
+}
+.reg-wrap .reg-register-box {
+  height: 100%;
+  outline: 0px;
+  box-sizing: border-box;
+  z-index: 1000;
+  overflow: hidden;
+}
+.reg-wrap .reg-register-box .reg-box-1 {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 22px;
+  width: 772px;
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  padding: 0 22px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-header {
+  height: 63px;
+  line-height: 63px;
+  padding-left: 18px;
+  font-size: 18px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-header .reg-register-close {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-header .reg-register-close::before {
+  content: "";
+  background: url(../img/img.png);
+  background-position: -156px -26px;
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content {
+  padding: 8px 0;
+  overflow: hidden;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left {
+  border-right: 1px solid #e8e8e8;
+  float: left;
+  padding-right: 36px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-spe {
+  padding-top: 20px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-one {
+  margin-top: 16px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-one .reg-register-con-phone {
+  border: 1px solid #d9d9d9;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  width: 398px;
+  color: #797979;
+  position: relative;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-one .reg-register-con-phone .reg-register-con-p-con {
+  width: 322px;
+  color: #000;
+  font-size: 14px;
+  height: 44px;
+  line-height: 44px;
+  width: 296px;
+  padding-left: 12px;
+  border: 0;
+  outline: 0;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-one .reg-register-con-phone .regUsername {
+  z-index: 1111111;
+  color: red;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-con-one .log-login-con-input {
+  border-color: red;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument {
+  font-size: 14px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-remind-me {
+  float: left;
+  cursor: pointer;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-remind-me .reg-icon-checkbox,
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-remind-me .reg-icon-checkbox-click {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  overflow: visible;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-remind-me .reg-icon-checkbox::before {
+  content: "";
+  background: url(../img/img.png) -198px -26px no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-remind-me .reg-icon-checkbox-click::before {
+  content: "";
+  background: url(../img/img.png) -182px -26px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-privacy {
+  color: #333;
+  text-decoration: underline;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-left .reg-register-argument .reg-submit {
+  margin: 36px 0 86px 30px;
+  display: block;
+  color: #FFFFFF;
+  width: 280px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 4px;
+  background: #e50541;
+  cursor: pointer;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right {
+  float: left;
+  padding: 28px 0 0 36px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-register-con-login {
+  border-bottom: 1px solid #e8e8e8;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-register-con-login .reg-register-con-right-login {
+  width: 190px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  display: inline-block;
+  overflow: visible;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-register-con-login .reg-register-con-icon-login {
+  cursor: pointer;
+  display: block;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #e50541;
+  color: #e50541;
+  border-radius: 4px;
+  margin: 26px 0;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-register-con-login .reg-register-con-icon-login a {
+  text-decoration: none;
+  color: #e50541;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login {
+  padding-top: 23px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login .reg-register-icon-joint-login {
+  width: 212px;
+  height: 50px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 50px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul {
+  list-style: none;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a {
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-xinlang {
+  width: 60px;
+  height: 60px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-xinlang::before {
+  content: "";
+  background: url(../img/img.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-txt {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-qq {
+  width: 60px;
+  height: 60px;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-qq::before {
+  content: "";
+  background: url(../img/img.png) -60px 0 no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.reg-wrap .reg-register-box .reg-box-1 .reg-register-dialog-content .reg-register-dialog-right .reg-joint-login ul li a .reg-joint-login-txt {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
+#log-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: none;
+}
+.log-wrap {
+  overflow: hidden;
+  user-select: none;
+  z-index: 1000;
+}
+.log-wrap .log-login-box {
+  height: 100%;
+  outline: 0px;
+  box-sizing: border-box;
+  z-index: 1000;
+  overflow: hidden;
+}
+.log-wrap .log-login-box .log-box-1 {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 22px;
+  width: 772px;
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  padding: 0 22px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-header {
+  height: 63px;
+  line-height: 63px;
+  padding-left: 18px;
+  font-size: 18px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-header .log-login-close {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  top: 22px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-header .log-login-close::before {
+  content: "";
+  background: url(../img/img.png);
+  background-position: -156px -26px;
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content {
+  padding: 8px 0;
+  overflow: hidden;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left {
+  border-right: 1px solid #e8e8e8;
+  float: left;
+  padding-right: 36px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-con-spe {
+  padding-top: 20px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-con-one {
+  margin-top: 16px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-con-one .log-login-con-phone {
+  border: 1px solid #d9d9d9;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding-left: 12px;
+  position: relative;
+  margin-bottom: 20px;
+  width: 398px;
+  color: #797979;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-con-one .log-login-con-phone .log-login-con-p-con {
+  width: 322px;
+  color: #000;
+  font-size: 14px;
+  height: 44px;
+  line-height: 44px;
+  width: 296px;
+  padding-left: 12px;
+  border: 0;
+  outline: 0;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-con-one .log-login-con-phone .loginUsername {
+  z-index: 1111111;
+  color: red;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument {
+  font-size: 14px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-remind-me {
+  float: left;
+  cursor: pointer;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-remind-me .log-icon-checkbox,
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-remind-me .log-icon-checkbox-click {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  overflow: visible;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-remind-me .log-icon-checkbox::before {
+  content: "";
+  background: url(../img/img.png) -198px -26px no-repeat;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-remind-me .log-icon-checkbox-click::before {
+  content: "";
+  background: url(../img/img.png) -182px -26px no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-left .log-login-argument .log-submit {
+  margin: 36px 0 86px 30px;
+  display: block;
+  color: #FFFFFF;
+  width: 280px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 4px;
+  background: #e50541;
+  cursor: pointer;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right {
+  float: left;
+  padding: 0 0 0 36px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-login-con-login .log-login-con-right-login {
+  width: 190px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  display: inline-block;
+  overflow: visible;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-login-con-login .log-login-con-icon-login {
+  cursor: pointer;
+  display: block;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #e50541;
+  color: #e50541;
+  border-radius: 4px;
+  margin: 26px 0;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-login-con-login .log-login-con-icon-login a {
+  text-decoration: none;
+  color: #e50541;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 4px 0 14px 0;
+  overflow: hidden;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login .log-login-icon-joint-login {
+  width: 212px;
+  height: 50px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 50px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul {
+  list-style: none;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a {
+  color: #333333;
+  cursor: pointer;
+  text-decoration: none;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-xinlang {
+  width: 60px;
+  height: 60px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-xinlang::before {
+  content: "";
+  background: url('../img/img.png') no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-txt {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-qq {
+  width: 60px;
+  height: 60px;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-qq::before {
+  content: "";
+  background: url(../img/img.png) -60px 0 no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.log-wrap .log-login-box .log-box-1 .log-login-dialog-content .log-login-dialog-right .log-joint-login ul li a .log-joint-login-txt {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  color: #4c4c4c;
+}
